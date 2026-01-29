@@ -1,0 +1,96 @@
+.root {
+  width: 100%;
+  height: 100vh;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Raleway, sans-serif;
+}
+.product {
+  width: 600px;
+  height: 600px;
+  border-radius: 10px;
+  display: flex;
+  gap: 2px;
+  background-color: white;
+}
+.left {
+  width: 45%;
+  height: 100%;
+  position: relative;
+}
+.right {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+}
+.sec1 {
+  margin-top: 50px;
+}
+.del {
+  font-size: 22px;
+  font-weight: 800;
+  color: rgb(74, 73, 73);
+}
+.cod {
+  font-size: 11px;
+  color: rgb(36, 36, 36);
+}
+.symbol {
+  font-size: 20px;
+  color: red;
+  margin-right: 10px;
+}
+.price {
+  font-size: 55px;
+  color: red;
+}
+.images img {
+  width: 30px;
+  border: 1px solid black;
+  margin-right: 10px;
+}
+.ben {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(130, 120, 120);
+}
+.color {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.cart {
+  background-color: red;
+  width: 150px;
+  height: 50px;
+  color: white;
+  border: 0;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  font-weight: 600;
+  box-shadow: 0 0 25px -5px black;
+  margin-bottom: 20px;
+}
+.ul1 {
+  font-size: 13px;
+}
+.left1 {
+  position: absolute;
+  width: 270px;
+  height: 450px;
+  background-color: greenyellow;
+  top: 60px;
+  left: -50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px -5px black;
+}
+.left img {
+  width: 300px;
+  position: absolute;
+  left: -50px;
+  top: 50px;
+}
