@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-1">
+        <div class="logo">Rsto</div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Reservations</a></li>
+          <li><a href="#">Order Online</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+      <div class="nav-2">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+    <content class="hero">
+      <section class="hero-left">
+        <div class="hero-text">
+          <p class="text"><i>Are You Hungry?</i></p>
+          <h1 class="h1"><b>Don't Wait</b></h1>
+          <p class="desc"><i>Let start to order food now</i></p>
+          <button class="check-out">Check Out Menu</button>
+        </div>
+        <div class="images">
+          <img
+            class="food-img"
+            onclick="showImage('./Assets/food1.png')"
+            src="./Assets/food1.png"
+            alt=""
+          />
+          <img
+            class="food-img"
+            onclick="showImage('./Assets/food2.png')"
+            src="./Assets/food2.png"
+            alt=""
+          />
+          <img
+            class="food-img"
+            onclick="showImage('./Assets/food3.png')"
+            src="./Assets/food3.png"
+            alt=""
+          />
+          <img
+            class="food-img"
+            onclick="showImage('./Assets/food4.png')"
+            src="./Assets/food4.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="hero-right">
+        <div class="img-box">
+          <img class="food" src="./Assets/food.png" alt="" />
+        </div>
+      </section>
+    </content>
+    <script>
+      function showImage(src) {
+        document.querySelector(".food").src = src;
+      }
+    </script>
+  </body>
+</html>
