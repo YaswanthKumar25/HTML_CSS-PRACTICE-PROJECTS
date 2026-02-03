@@ -9,8 +9,8 @@
   <body>
     <div class="home">
       <!--nav-section-->
-      <nav class="header">
-        <img class="logo" src="./assets/white-logo.svg" alt="Logo" />
+      <nav class="header" id="header">
+        <img class="logo" id="logo" src="./assets/white-logo.svg" alt="Logo" />
         <ul class="compo">
           <li>Home</li>
           <li>Features</li>
@@ -20,7 +20,7 @@
           <li>Blog</li>
           <li>Contact</li>
         </ul>
-        <button class="get-it-now">Get it Now</button>
+        <button class="get-it-now" id="get-it-now">Get it Now</button>
       </nav>
       <!--hero-section-->
       <div class="hero">
@@ -39,6 +39,25 @@
         </div>
       </div>
     </div>
+    <script>
+      let currentscrolle = window.scrollY;
+      const header = document.getElementById("header");
+      const logo = document.getElementById("logo");
+      const button = document.getElementById("get-it-now");
+
+      window.addEventListener("scroll", function () {
+        let scrollvalue = window.scrollY;
+        if (scrollvalue > currentscrolle) {
+          header.classList.add("scrolled");
+          logo.src = "./assets/logo.svg";
+          button.classList.add("get-it-now-btn");
+        } else {
+          header.classList.remove("scrolled");
+          logo.src = "./assets/white-logo.svg";
+          button.classList.remove("get-it-now-btn");
+        }
+      });
+    </script>
     <!--features-section-->
     <div class="features">
       <div class="top-f">
@@ -61,7 +80,7 @@
           </div>
           <div class="cards">
             <p class="card1"></p>
-            <p class="card2">Push to Deploy</p>
+            <p class="card2">Simple Queues</p>
             <p class="card3">
               it is long established fact that a reader will be distracted by
               the readable content of page at its layout
@@ -69,7 +88,7 @@
           </div>
           <div class="cards">
             <p class="card1"></p>
-            <p class="card2">Push to Deploy</p>
+            <p class="card2">SSL Certificate</p>
             <p class="card3">
               it is long established fact that a reader will be distracted by
               the readable content of page at its layout
