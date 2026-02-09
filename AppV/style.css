@@ -292,3 +292,116 @@ body {
   color: grey;
   line-height: 30px;
 }
+.pricing {
+  width: 100%;
+  height: 100vh;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 254, 254);
+}
+.p-top {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.p-name {
+  margin-top: 50px;
+  font-weight: 600;
+  color: #ff6b81;
+  letter-spacing: 0.5px;
+}
+.p-card-desc {
+  width: 85%;
+  line-height: 20px;
+  color: rgb(106, 106, 106);
+}
+.p-text {
+  font-weight: 800;
+  font-size: 35px;
+  width: 800px;
+  text-align: center;
+}
+.p-desc {
+  width: 800px;
+  font-size: 18px;
+  text-align: center;
+  color: grey;
+  padding-bottom: 30px;
+}
+.p-bottom {
+  width: 100%;
+  height: 70%;
+}
+.price-cards {
+  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-left: 150px;
+  margin-right: 100px;
+  padding: 20px;
+}
+.price-card {
+  height: 100%;
+  width: 85%;
+  margin-top: 30px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: white;
+  box-shadow: 0.5px 1px 2px rgba(11, 11, 11, 0.5);
+  transition: all 0.2s ease;
+}
+.price-card:hover{
+  transform: translate3d(2px,-5px,-5px)
+
+}
+.p-head {
+  font-size: larger;
+  font-weight: bolder;
+}
+.price {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: x-large;
+  font-weight: bold;
+}
+.price span {
+  font-size: small;
+  font-weight: 400;
+}
+.p-buy {
+  height: 35px;
+  width: 90%;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+  justify-content: center;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+.p-buy:hover{
+  background-color: #ff6b81;
+  color: white;
+}
+.price-card ul {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+.price-card li {
+  margin-left: 20px;
+  list-style: none;
+  font-weight: 400;
+  padding: 5px;
+}

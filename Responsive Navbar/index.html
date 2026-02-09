@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">CodeNest</div>
+        <ul class="linkes">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Blogs</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <a href="" class="getstarted">Get Started</a>
+        <div class="menu1">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="mobilemenu open">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Blogs</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <a href="" class="getstarted2">Get Started</a>
+      </div>
+      <script>
+        const menu=document.querySelector(".menu1")
+        const menuicon=document.querySelector(".menu1 i")
+        const mobilemenu=document.querySelector(".mobilemenu")
+
+        menu.onclick=function(){
+            mobilemenu.classList.toggle("open")
+             if(mobilemenu.classList.contains("open")){
+                menuicon.classList.replace("fa-bars","fa-xmark")
+             }
+             else{
+                menuicon.classList.replace("fa-xmark","fa-bars")
+             }
+        }
+      </script>
+    </header>
+  </body>
+</html>
