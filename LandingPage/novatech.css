@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background:
+    radial-gradient(circle at top right, #7c3aed, transparent 40%),
+    radial-gradient(circle at bottom left, #3b00a0, transparent 40%), #0b0f1a;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+  align-items: center;
+  margin-top: 0;
+  height: auto;
+  padding: 16px 40px;
+}
+.nav-logo {
+  width: 300px;
+  height: 100px;
+}
+.logo {
+  width: 140px;
+  height: auto;
+  border-radius: 20px;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  color: white;
+}
+.links ol {
+  list-style: none;
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+}
+.links ol li {
+  font-size: medium;
+  font-weight: normal;
+  cursor: pointer;
+}
+.links ol li:hover {
+  color: blueviolet;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  height: 50px;
+  width: 300px;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+.signin {
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  letter-spacing: 0.2em;
+  font-weight: normal;
+  font-size: medium;
+  background-color: #0b0f1a;
+  color: white;
+  box-shadow: 0px 0px 5px 0px white;
+  border: none;
+}
+.signin:hover {
+  background-color: #7c3aed;
+  box-shadow: 0px 0px 5px 0px white;
+  transition: ease-in-out 0.3s;
+}
+.getstart {
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+  letter-spacing: 0.2em;
+  font-weight: normal;
+  font-size: medium;
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  color: white;
+  box-shadow: 0px 0px 5px 0px white;
+  border: none;
+}
+.getstart:hover {
+  background: linear-gradient(135deg, #a855f7, #7c3aed);
+  box-shadow: 0px 0px 5px 0px white;
+  transition: ease-in-out 0.3s;
+}
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.hero-left {
+  margin-top: 0;
+  padding-left: 50px;
+  height: 100vh;
+  width: 40%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bage {
+  margin-bottom: 0;
+  width: 40%;
+  height: 30px;
+}
+.head-text {
+  margin-top: 0;
+  font-size: 50px;
+  font-weight: bold;
+  width: 80%;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+.head2-text {
+  color: #7c3aed;
+}
+.dic {
+  width: 80%;
+  line-height: 1.5rem;
+  font-weight: lighter;
+  color: #94a3b8;
+  font-size: medium;
+  margin-bottom: 30px;
+}
+.getstart-btn {
+  color: white;
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  border: none;
+  font-size: medium;
+  font-weight: normal;
+}
+.getstart-btn:hover {
+  background: linear-gradient(135deg, #a855f7, #7c3aed);
+  box-shadow: 0px 0px 5px 0px white;
+  transition: ease-in-out 0.3s;
+}
+.watch-demo {
+  color: white;
+  background-color: #0b0f1a;
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  border: none;
+  font-size: medium;
+  font-weight: normal;
+  box-shadow: 0px 0px 5px 0px white;
+  margin-left: 15px;
+}
+.watch-demo:hover {
+  background-color: #7c3aed;
+  box-shadow: 0px 0px 5px 0px white;
+  transition: ease-in-out 0.3s;
+}
+.hero-right {
+  height: 100vh;
+  width: 60%;
+  margin-top: 0;
+}
+.hero-png {
+  margin-top: 10%;
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .links {
+    display: none;
+  }
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-left {
+    width: 100%;
+    padding-left: 0;
+  }
+  .hero-right {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1100px) {
+  .links {
+    display: none;
+  }
+  .bage {
+    width: 120px;
+    height: 20px;
+  }
+  .head-text {
+    font-size: 30px;
+    width: 100%;
+  }
+  .head2-text {
+    font-size: 30px;
+    width: 100%;
+    color: #7c3aed;
+  }
+  .dic {
+    width: 100%;
+    font-size: smaller;
+  }
+  .hero-right {
+    width: 70%;
+  }
+  .hero-png {
+    margin-top: 10%;
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .getstart-btn {
+    margin-bottom: 20px;
+    width: 50%;
+    font-size: small;
+  }
+  .watch-demo {
+    width: 40%;
+    font-size: small;
+  }
+}
